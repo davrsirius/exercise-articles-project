@@ -34,9 +34,9 @@ img {
   font-family: 'Bebas Neue';
   src: url('../fonts/BebasNeue-Regular.eot');
   src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
-      url('../fonts/BebasNeue-Regular.woff') format('woff'),
-      url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
+    url('../fonts/BebasNeue-Regular.woff') format('woff'),
+    url('../fonts/BebasNeue-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -46,9 +46,9 @@ img {
   font-family: 'Roboto Condensed';
   src: url('../fonts/RobotoCondensed-Regular.eot');
   src: url('../fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
-      url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
-      url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+    url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -72,4 +72,128 @@ img {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.global-wrapper {
+  /* height: 100%; */
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  max-width: 600px;
+  width: 100%;
+  background-image: url('../images/left-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  width: 285px;
+
+}
+
+.hero-content-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* .hero-link {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #1E90FF;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  letter-spacing: 2px;
+  color: #fff;
+} */
+
+/* .hero-link:hover {
+  background: rgba(30, 144, 255, 0.8)
+}
+.hero-link:active {
+  background: rgba(30, 144, 255, 0.6)
+} */
+
+/*
+.hero-link-inner::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-image: url('../images/star-icon.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+} */
+
+/* .hero-link-text {} */
+
+
+.hero-link {
+  display: inline-block;
+  background-color: #1E90FF;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.hero-link-inner {
+  padding: 12px 24px;
+  display: flex;
+}
+
+.hero-link-inner::before {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-image: url('../images/star-icon.svg');
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+  .hero {
+    background-image: url('../images/left-bg@2x.jpg');
+  }
 }
