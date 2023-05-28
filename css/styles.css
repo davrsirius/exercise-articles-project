@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px dashed #1e90ff;
+  outline: 2px;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -19,8 +23,9 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #222;
   color: #222;
+
 }
 
 img {
@@ -94,6 +99,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+  padding: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,6 +174,14 @@ img {
   letter-spacing: 2px;
 }
 
+.hero-link:hover {
+  background-color: rgba(30, 143, 255, 0.8);
+}
+
+.hero-link:active {
+  background-color: rgba(30, 143, 255, 0.6);
+}
+
 .hero-link-inner {
   padding: 12px 24px;
   display: flex;
@@ -185,6 +199,190 @@ img {
 }
 
 
+/* LATEST VIDEOS */
+.latest-videos {
+  padding: 54px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.latest-videos-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+}
+
+.latest-video-divider {
+  border: 0;
+  height: 1px;
+  background-color: #999;
+  margin-bottom: 24px;
+}
+
+.latest-videos-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.latest-videos-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item-latest-videos {
+  display: flex;
+}
+
+.item-latest-videos-img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-latest-videos-content {
+  padding: 16px;
+}
+
+.item-latest-videos-title {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.item-videos-content-link {
+  color: #222222;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.item-videos-content-link:hover {
+  color: #1e90ff;
+}
+
+.item-videos-content-link:active {
+  opacity: 0.6;
+  ;
+}
+
+.item-latest-videos-meta {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.item-latest-videos-meta-item {
+  display: flex;
+  align-items: center;
+}
+
+.item-latest-videos-meta-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.item-latest-videos-meta-item::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.item-latest-videos-meta-time::before {
+  background-image: url('../images/icon-clock.svg');
+}
+
+.item-latest-videos-meta-views::before {
+  background-image: url('../images/icon-visibility.svg');
+}
+
+
+/* BUTTON */
+
+.load-more {
+  padding: 12px;
+  display: block;
+  width: 100%;
+  border: 0;
+  background: #1E90FF;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  transition: background-color 0.4s ease;
+}
+
+.load-more:hover {
+  background: rgba(30, 144, 255, 0.8);
+}
+
+.load-more:active {
+  background-color: rgba(30, 144, 255, 0.6);
+}
+
+
+
+
+
+
+/*
+.item-latest-videos-meta-time {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  }
+.item-latest-videos-meta-time::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  content: "";
+  background-image: url('../images/icon-clock.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.item-latest-videos-meta-views {
+  display: flex;
+  align-items: center;
+}
+
+.item-latest-videos-meta-views::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url('../images/icon-visibility.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+ */
+
+
+
+
+/* RETINA BG */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
